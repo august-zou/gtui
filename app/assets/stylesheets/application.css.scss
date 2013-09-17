@@ -1,0 +1,155 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+.gthead
+{
+  height:80px;
+  padding-top:20px;
+}
+
+.gtcontent{
+  border-top: 1px solid #9d9d9d;
+  
+}
+.logo{
+  float:left;
+}
+.uinfo{
+  float:right;
+  padding-right:20px;
+}
+
+.uname{
+ float:left; 
+ padding-right:5px;
+ text-align:center;
+ text-font:12px;
+}
+
+.uop{
+  float:left;
+  padding-right:5px;
+  
+}
+
+.secondNav{
+  height:54px;
+  margin-top:5px;
+}
+
+.navbar {
+margin-bottom: 30px;
+}
+
+.navbar-nav{  
+  li.active
+  {
+    font-weight:bold;
+  }
+}
+
+.row .oppbar{
+  margin-bottom:15px;
+  margin-top:20px;
+}
+//$navbar-default-bg: #303030;
+$navbar-inverse-link-color: #fff;
+//$navbar-default-link-hover-bg: #888;
+$navbar-inverse-link-active-bg: #68a400;
+
+$font-family-base: "宋体","Times New Roman",Georgia,Serif;
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+
+.sideborder{
+  border-left: 1px solid #9d9d9d;  
+}
+
+.col-md-2.sidebarm{  
+  padding-right:0px;
+}
+
+.sidebar.affix {
+  position: static;
+}
+
+/* First level of nav */
+.sidenav {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  text-align:right;
+}
+
+/* All levels of nav */
+.sidebar .nav > li {
+  height:35px;
+}
+
+/* All levels of nav */
+.sidebar .nav > li > a {
+  display: block;
+  color: #303030;
+}
+.sidebar .nav > li > a:hover,
+.sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+  border-right: 1px solid #dbd8e0;
+}
+.sidebar .nav > .active > a,
+.sidebar .nav > .active:hover > a,
+.sidebar .nav > .active:focus > a {
+  color: #fff;
+  background-color: #1671c8;
+}
+
+/* Nav: second level (shown on .active) */
+.sidebar .nav .nav {
+  display: none; /* Hide by default, but at >768px, show it */
+  margin-bottom: 8px;
+}
+.sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+
+@import "twitter/bootstrap";
+
+.navbar-inverse .navbar-right > li > a{
+  color:#e5b539;
+}
+
+.pagination
+{
+  margin-top:0px;
+  float:right;
+}
+.breadcrumb
+{
+ margin-bottom:10px; 
+}
